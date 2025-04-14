@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Gojūon Learning Helper",
+  "name": "Korean Learning Helper",
   "version": "1.0",
-  "description": "A simple extension to help learn Japanese gojūon through active recall",
+  "description": "A simple extension to help learn Korean through active recall",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

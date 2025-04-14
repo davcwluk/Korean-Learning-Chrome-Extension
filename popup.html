@@ -2,73 +2,72 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Gojūon Learning Helper</title>
+  <title>Korean Learning Helper</title>
   <style>
     body {
-      width: 150px;
-      height: 240px;
+      width: 250px;
+      height: 250px;
       margin: 0;
-      padding: 20px;
+      padding: 15px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
     }
-    #config {
-      width: 100%;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    select {
-      width: 100%;
-      padding: 5px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      font-size: 12px;
-      background-color: #f8f8f8;
-    }
-    #kana {
-      font-size: 64px;
+    #character {
+      font-size: 48px;
       cursor: pointer;
       font-weight: normal;
       height: 80px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       user-select: none;
+      margin-bottom: 15px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 10px;
     }
     #pronunciation {
-      font-size: 24px;
-      color: #666;
-      font-family: Arial, sans-serif;
-      height: 30px;
+      font-size: 18px;
+      color: #555;
+      min-height: 30px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: 10px;
+      text-align: center;
     }
-    #writing-system {
-      font-size: 14px;
-      color: #888;
-      height: 20px;
+    #romanization {
+      font-size: 16px;
+      color: #666;
+      min-height: 50px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .info {
+      font-size: 12px;
+      color: #888;
+      margin-top: 15px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div id="config">
-    <select id="character-set">
-      <option value="both">両方 (Both)</option>
-      <option value="hiragana">平仮名 (Hiragana)</option>
-      <option value="katakana">片仮名 (Katakana)</option>
-    </select>
-  </div>
-  <div id="kana"></div>
+  <div id="character"></div>
   <div id="pronunciation"></div>
-  <div id="writing-system"></div>
+  <div id="romanization"></div>
+  <div class="info">Click to reveal meaning, click again for new word</div>
   <script src="popup.js"></script>
 </body>
-</html> 
+</html>
